@@ -4,6 +4,11 @@ A simple cross-language currency converter that reads exchange rates from a shar
 
 ## Project Structure
 
+multi-lang-currency-converter/
+├── cpp/
+│   └── converter.cpp
+├── data/
+│   └── rates.json
 
 ## Features
 
@@ -26,3 +31,17 @@ A simple cross-language currency converter that reads exchange rates from a shar
 git clone https://github.com/YOUR-USERNAME/multi-lang-currency-converter.git
 cd multi-lang-currency-converter
 
+## Build the converter
+cd cpp
+g++ converter.cpp -o converter
+
+## Run
+./converter
+ ## output:
+Available currencies: AUD BGN BRL CAD CHF CNY CZK DKK EUR GBP HKD HUF IDR ILS INR ISK JPY KRW MXN MYR NOK NZD PHP PLN RON SEK SGD THB TRY ZAR 
+
+Enter amount: 20
+From currency (e.g., USD): AUD
+To currency (e.g., EUR): ZAR
+
+20.0000 AUD = 233.5224 ZAR
